@@ -1,0 +1,98 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Abel', sans-serif;
+	background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+	text-align: center;
+}
+.data{
+	margin: auto;
+	max-width: 99%;
+}
+
+#explicacao {
+	margin: auto;
+	max-width: 99%;
+	background-color: #BC70A4;
+}
+
+#classifica{
+	margin: auto;
+	max-width: 99%;
+	background-color: #BC70A4;
+	font-size: 18px;
+}
+
+#formula{
+	margin-top: 20px;
+}
+
+#dados{
+	background-image: linear-gradient(140deg, #EADEDB 0%, #BC70A4 50%, #BFD641 75%);
+	margin-left: 10px;
+	padding: 10px;
+	text-align: center;
+	max-width: 100%;
+	font-size: 18px;
+	color: white;
+
+}
+
+#peso{
+	text-align: right;
+}
+
+#altura{
+	text-align: right;s
+}
+
+#classificar{
+	margin-left: 10%;
+	color: white;
+	background-color: #BC70A4;
+}
+.botao{
+	background-color: #F0E68C;
+	border-radius: 5px;
+}
+
+.botao:hover{
+	color: white;
+	background-color: #FFA500;
+}
+
+#a {
+	color: #BC70A4;
+}
+
+#b {
+	color: #BC70A4;
+}
+
+#c {
+	color: #BC70A4;
+}
+
+#d {
+	color: #BC70A4;
+}
+
+#e {
+	color: #BC70A4;
+}
+
+h6{
+	font-style: italic;
+	text-align: right;
+	margin-right: 5px;
+}
+
+/* esse bloco tira as setas do imput de numero */
+input[type="number"]::-webkit-outer-spin-button,  
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

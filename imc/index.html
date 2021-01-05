@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de IMC</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="script" href="script.js">	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Calculadora de IMC</h1>
+
+	<h2>Digite abaixo os valores para realizar o cálculo do IMC.</h2>
+
+	<form class="data">
+		<p id="dados">
+			<label>Digite seu peso:</label>
+			<input type="number" min="1" step="0.01" id="peso"  placeholder=" exemplo: 56,5" autofocus >
+			<label>quilos</label>
+		</p>
+
+		<p id="dados">
+			<label>Digite sua altura:</label>
+			<input type="number" id="altura" placeholder=" exemplo: 1,63">
+			<label>metro e centimetros</label>	
+		</p>
+
+		<p>
+			<button class="botao" id="confirma" type="button" onclick="calculaImc();getData (); return false">Calcular</button>
+			<button  class="botao" onclick="limpar()">Limpar</button>
+		</p>
+	</form>
+	
+	<h2>RESULTADO</h2>
+	<output id="result"></output>
+	<output id="alert"></output>
+
+	<div id="classifica">
+		<h3>O IMC é calculado pela fórmula peso/altura² e as classificações são:</h3>
+
+			<div>
+				<p id="classificar">
+					<label id="1" >
+					CLASSIFICAÇÃO 1 - 
+					IMC: menor que 18,5
+					Classificação: Magreza - 
+					Obesidade: Grau 0
+					</label>
+					<label id="a"><--- Sua classificação</label>
+				</p>
+				
+				<p id="classificar">
+					<label  id="2">
+					CLASSIFICAÇÃO 2 - 
+					IMC: entre 18,5 e 24,9
+					Classificação: Normal - 
+					Obesidade: Grau 0
+					</label>
+					<label id="b"><--- Sua classificação</label>
+				</p>	
+				
+				<p id="classificar">
+					<label id="3">
+					CLASSIFICAÇÃO 3 - 
+					IMC: entre 25,0 e 29,9
+					Classificação: Sobrepeso - 
+					Obesidade: Grau I
+					</label>
+					<label id="c"><--- Sua classificação</label>
+				</p>	
+				
+				<p id="classificar">
+					<label id="4">
+					CLASSIFICAÇÃO 4 - 
+					IMC: entre 30,0 e 39,9
+					Classificação: Obesidade - 
+					Obesidade: Grau II
+					</label>
+					<label id="d"><--- Sua classificação</label>
+				</p>
+				
+				<p id="classificar">
+					<label id="5">
+					CLASSIFICAÇÃO 5 - 
+					IMC: maior que 40,0
+					Classificação: Obesidade grave - 
+					Obesidade: Grau III
+					</label>
+					<label id="e"><--- Sua classificação</label>
+				</p>
+			</div>
+	</div>
+
+	<div id="explicacao">
+		<h3>ÍNDICE DE MASSA CORPORAL (IMC)</h3>
+
+		<h4>
+			O índice de massa corporal, também chamado de IMC, é um parâmetro que classifica, entre outras coisas, o nível de obesidade de um indivíduo.
+		</h4>
+
+		<h4>
+			O Índice de Massa Corporal (IMC) é um parâmetro bastante utilizado para classificar o indivíduo de acordo com seu peso e altura. Seu uso é disseminado principalmente entre profissionais que trabalham com o corpo, como médicos, fisioterapeutas e profissionais de Educação Física. 
+		É importante ressaltar que a Organização Mundial da Saúde (OMS) utiliza esse índice como indicador do nível de obesidade nos diferentes países.
+
+		O cálculo desse índice é bastante simples e, para utilizá-lo, basta saber o seu peso e a sua altura e inseri-los na fórmula.*
+		</h4>
+
+		<h6>*Fonte: brasilescola.uol.com.br</h6>
+	</div>
+
+	<h6>by Cristina Pineda.</h6>
+
+	<script type="text/javascript" src="script.js"></script>
+	
+</body>
+</html>
